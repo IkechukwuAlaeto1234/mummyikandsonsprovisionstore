@@ -1,1 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MUMMY IK & SONS PROVISION STORE</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Outfit:wght@100..900&family=Syne:wght@400..800&family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='9' cy='21' r='1'%3E%3C/circle%3E%3Ccircle cx='20' cy='21' r='1'%3E%3C/circle%3E%3Cpath d='M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6'%3E%3C/path%3E%3C/svg%3E">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="main-header">
+        <div class="container header-content">
+            <a href="#" class="logo" aria-label="Mummy IK & Sons Provision Store homepage">
+                <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><circle cx='9' cy='21' r='1'></circle><circle cx='20' cy='21' r='1'></circle><path d='M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6'></path></svg>
+                <h1>MUMMY IK & <span>SONS</span></h1>
+            </a>
+            <nav id="main-nav">
+                <button class="mobile-menu-btn" aria-label="Toggle mobile menu" aria-expanded="false">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul class="nav-list">
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <div class="cart-icon-wrapper">
+                    <i class="fas fa-shopping-cart cart-icon" aria-label="Shopping Cart"></i>
+                    <span class="cart-count">0</span>
+                    <div class="cart-dropdown">
+                        <div class="cart-dropdown-header">
+                            <h4>Your Cart</h4>
+                            <button class="cart-close"><i class="fas fa-times"></i></button>
+                        </div>
+                        <div class="cart-items">
+                            <div class="empty-cart">
+                                <i class="fas fa-box-open"></i>
+                                <p>Your cart is empty.</p>
+                                <a href="#products" class="btn cart-btn cart-shop-now">Shop Now</a>
+                            </div>
+                        </div>
+                        <div class="cart-total">
+                            <span class="cart-total-title">Total:</span>
+                            <span class="cart-total-amount">$0.00</span>
+                        </div>
+                        <div class="cart-buttons">
+                            <a href="#" class="btn cart-btn cart-view-btn">View Cart</a>
+                            <a href="#" class="btn cart-btn cart-checkout-btn">Checkout</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
 
+    <main>
+        <section id="home" class="hero">
+            <div class="container hero-content" data-aos="fade-up" data-aos-duration="1000">
+                <h2>Your Daily Essentials, Delivered Fresh!</h2>
+                <p>MUMMY IK & SONS is your trusted neighborhood provision store, offering a wide array of fresh and high-quality products to meet all your household needs.</p>
+                <div class="hero-buttons">
+                    <a href="#products" class="btn">Explore Products</a>
+                    <a href="#contact" class="btn btn-outline">Contact Us</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="features" class="features">
+            <div class="container">
+                <div class="section-title" data-aos="fade-up">
+                    <h2>Why Choose Us?</h2>
+                    <p>Experience the difference with our commitment to quality, convenience, and exceptional customer service.</p>
+                </div>
+                <div class="features-grid">
+                    <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="feature-icon"><i class="fas fa-leaf"></i></div>
+                        <h3>Fresh & Quality Produce</h3>
+                        <p>We source the freshest ingredients and top-quality products directly from trusted suppliers.</p>
+                    </div>
+                    <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="feature-icon"><i class="fas fa-shipping-fast"></i></div>
+                        <h3>Fast & Reliable Delivery</h3>
+                        <p>Get your groceries delivered right to your doorstep swiftly and securely.</p>
+                    </div>
+                    <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="feature-icon"><i class="fas fa-wallet"></i></div>
+                        <h3>Affordable Prices</h3>
+                        <p>Enjoy competitive pricing and great value on all your everyday essentials.</p>
+                    </div>
+                    <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
+                        <div class="feature-icon"><i class="fas fa-handshake"></i></div>
+                        <h3>Customer Satisfaction</h3>
+                        <p>Our priority is your happiness. We're here to serve you with a smile and dedication.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="products" class="popular-products">
+            <div class="container">
+                <div class="section-title" data-aos="fade-up">
+                    <h2>Our Popular Products</h2>
+                    <p>Discover a selection of our most loved and frequently purchased items by our cherished customers.</p>
+                </div>
+                <div class="products-grid">
+                    <div class="product-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="product-img-container">
+                            <img src="/api/placeholder/400/300" alt="Fresh Tomatoes" class="product-img">
+                            <span class="product-tag">Fresh</span>
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category">Produce</span>
+                            <h3 class="product-title">Organic Tomatoes</h3>
+                            <p class="product-description">Juicy and ripe organic tomatoes, perfect for any meal.</p>
+                            <div class="add-to-cart">
+                                <p class="product-price"><span class="currency">N</span>850.00</p>
+                                <button class="add-to-cart-btn"><i class="fas fa-plus"></i> Add</button>
+                            </div>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                                <span>(4.5)</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="product-img-container">
+                            <img src="/api/placeholder/400/300" alt="Local Rice" class="product-img">
+                            <span class="product-tag">Staple</span>
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category">Grains</span>
+                            <h3 class="product-title">Premium Local Rice</h3>
+                            <p class="product-description">High-quality Nigerian local rice, ideal for delicious meals.</p>
+                            <div class="add-to-cart">
+                                <p class="product-price"><span class="currency">N</span>4,500.00</p>
+                                <button class="add-to-cart-btn"><i class="fas fa-plus"></i> Add</button>
+                            </div>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                <span>(5.0)</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="product-img-container">
+                            <img src="/api/placeholder/400/300" alt="Cooking Oil" class="product-img">
+                            <span class="product-tag">Cooking</span>
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category">Pantry</span>
+                            <h3 class="product-title">Vegetable Cooking Oil</h3>
+                            <p class="product-description">Healthy and versatile cooking oil for all your culinary needs.</p>
+                            <div class="add-to-cart">
+                                <p class="product-price"><span class="currency">N</span>2,800.00</p>
+                                <button class="add-to-cart-btn"><i class="fas fa-plus"></i> Add</button>
+                            </div>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                                <span>(4.0)</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-aos="fade-up" data-aos-delay="400">
+                        <div class="product-img-container">
+                            <img src="/api/placeholder/400/300" alt="Packaged Snacks" class="product-img">
+                            <span class="product-tag">Snacks</span>
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category">Confectionery</span>
+                            <h3 class="product-title">Assorted Snacks Pack</h3>
+                            <p class="product-description">A delightful mix of popular snacks for quick treats.</p>
+                            <div class="add-to-cart">
+                                <p class="product-price"><span class="currency">N</span>1,200.00</p>
+                                <button class="add-to-cart-btn"><i class="fas fa-plus"></i> Add</button>
+                            </div>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                                <span>(4.5)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials" class="testimonials">
+            <div class="container">
+                <div class="section-title" data-aos="fade-up">
+                    <h2>What Our Customers Say</h2>
+                    <p>Hear from our satisfied customers who trust us for their daily provision needs.</p>
+                </div>
+                <div class="testimonial-slider" data-aos="fade-up" data-aos-delay="100">
+                    <div class="testimonial-slide active">
+                        <div class="testimonial-content">
+                            <div class="testimonial-quote"><i class="fas fa-quote-right"></i></div>
+                            <p class="testimonial-text">"Mummy IK & Sons has transformed my grocery shopping! The products are always fresh, and the delivery is incredibly fast. Highly recommended!"</p>
+                            <p class="testimonial-author">Mrs. Adewale</p>
+                            <p class="testimonial-author-title">Lagos Resident</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-slide">
+                        <div class="testimonial-content">
+                            <div class="testimonial-quote"><i class="fas fa-quote-right"></i></div>
+                            <p class="testimonial-text">"I appreciate the variety and quality of items available. It's truly a one-stop-shop for all my household provisions. Fantastic service!"</p>
+                            <p class="testimonial-author">Mr. Obinna</p>
+                            <p class="testimonial-author-title">Entrepreneur</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-slide">
+                        <div class="testimonial-content">
+                            <div class="testimonial-quote"><i class="fas fa-quote-right"></i></div>
+                            <p class="testimonial-text">"Always a pleasant experience. The staff are friendly, and the prices are very fair. Mummy IK & Sons is now my go-to store."</p>
+                            <p class="testimonial-author">Miss Chioma</p>
+                            <p class="testimonial-author-title">Student</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-dots">
+                    <span class="dot active" data-slide="0"></span>
+                    <span class="dot" data-slide="1"></span>
+                    <span class="dot" data-slide="2"></span>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="cta">
+            <div class="container cta-content" data-aos="zoom-in" data-aos-duration="800">
+                <h2>Ready to Shop Smart?</h2>
+                <p>Join the growing family of satisfied customers and experience convenience at its best. Start exploring our wide range of products today!</p>
+                <a href="#products" class="btn">Shop Now!</a>
+            </div>
+        </section>
+    </main>
+
+    <footer id="main-footer">
+        <div class="container footer-grid">
+            <div class="footer-section footer-about" data-aos="fade-up">
+                <a href="#" class="logo footer-logo">
+                    <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><circle cx='9' cy='21' r='1'></circle><circle cx='20' cy='21' r='1'></circle><path d='M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6'></path></svg>
+                    <h1>MUMMY IK & <span>SONS</span></h1>
+                </a>
+                <p class="footer-about-text">Your one-stop shop for fresh and high-quality provisions. We are dedicated to serving our community with integrity and excellence.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-section footer-links-section" data-aos="fade-up" data-aos-delay="100">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#features">About Us</a></li>
+                    <li><a href="#products">Our Products</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section footer-contact" data-aos="fade-up" data-aos-delay="200">
+                <h3>Contact Us</h3>
+                <div class="contact-info">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>123 Provision Lane, City Centre, State, Nigeria</p>
+                </div>
+                <div class="contact-info">
+                    <i class="fas fa-phone-alt"></i>
+                    <p>+234 801 234 5678</p>
+                </div>
+                <div class="contact-info">
+                    <i class="fas fa-envelope"></i>
+                    <p>info@mummyikandsons.com</p>
+                </div>
+            </div>
+
+            <div class="footer-section footer-newsletter" data-aos="fade-up" data-aos-delay="300">
+                <h3>Newsletter</h3>
+                <p>Stay updated with our latest offers and new arrivals.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email" class="newsletter-input" aria-label="Enter your email for newsletter">
+                    <button type="submit" class="newsletter-btn" aria-label="Subscribe to newsletter"><i class="fas fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 MUMMY IK & SONS PROVISION STORE. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init({
+            once: true, // Whether animation should happen only once - while scrolling down
+            mirror: false, // Whether elements should animate out while scrolling past them
+        });
+
+        // Header Scroll Effect
+        window.addEventListener('scroll', () => {
+            const header = document.getElementById('main-header');
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+        const navList = document.querySelector('.nav-list');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            navList.classList.toggle('active');
+            mobileMenuBtn.setAttribute('aria-expanded', navList.classList.contains('active'));
+        });
+
+        // Close mobile menu when a link is clicked
+        document.querySelectorAll('.nav-list a').forEach(link => {
+            link.addEventListener('click', () => {
+                navList.classList.remove('active');
+                mobileMenuBtn.setAttribute('aria-expanded', false);
+            });
+        });
+
+        // Testimonial Slider
+        const slides = document.querySelectorAll('.testimonial-slide');
+        const dots = document.querySelectorAll('.dot');
+        let currentSlide = 0;
+        let slideInterval;
+
+        function showSlide(index) {
+            slides.forEach((slide, i) => {
+                slide.classList.remove('active');
+                dots[i].classList.remove('active');
+            });
+            slides[index].classList.add('active');
+            dots[index].classList.add('active');
+            currentSlide = index;
+        }
+
+        function nextSlide() {
+            currentSlide = (currentSlide + 1) % slides.length;
+            showSlide(currentSlide);
+        }
+
+        function startSlider() {
+            slideInterval = setInterval(nextSlide, 5000); // Change slide every 5 seconds
+        }
+
+        function stopSlider() {
+            clearInterval(slideInterval);
+        }
+
+        dots.forEach(dot => {
+            dot.addEventListener('click', (e) => {
+                const slideIndex = parseInt(e.target.dataset.slide);
+                showSlide(slideIndex);
+                stopSlider(); // Stop auto-slide on manual navigation
+                startSlider(); // Resume auto-slide after a short delay
+            });
+        });
+
+        // Initialize slider
+        showSlide(currentSlide);
+        startSlider();
+
+        // Shopping Cart Dropdown Toggle
+        const cartIcon = document.querySelector('.cart-icon-wrapper');
+        const cartDropdown = document.querySelector('.cart-dropdown');
+        const cartCloseBtn = document.querySelector('.cart-close');
+
+        cartIcon.addEventListener('click', (e) => {
+            // Prevent click on cart items from closing the dropdown
+            if (!e.target.closest('.cart-dropdown')) {
+                cartDropdown.classList.toggle('active');
+            }
+        });
+
+        cartCloseBtn.addEventListener('click', () => {
+            cartDropdown.classList.remove('active');
+        });
+
+        // Close cart dropdown if clicked outside
+        document.addEventListener('click', (e) => {
+            if (!cartDropdown.contains(e.target) && !cartIcon.contains(e.target)) {
+                cartDropdown.classList.remove('active');
+            }
+        });
+
+        // Prevent dropdown from closing when clicking inside it
+        cartDropdown.addEventListener('click', (e) => {
+            e.stopPropagation();
+        });
+
+        // Placeholder for Add to Cart functionality (conceptual)
+        document.querySelectorAll('.add-to-cart-btn').forEach(button => {
+            button.addEventListener('click', () => {
+                alert('Product added to cart! (This is a placeholder action)');
+                // In a real app, you would add logic here to update cart count and items
+                const cartCount = document.querySelector('.cart-count');
+                cartCount.textContent = parseInt(cartCount.textContent) + 1;
+
+                // Remove empty cart message if it exists
+                const emptyCart = document.querySelector('.empty-cart');
+                if (emptyCart) {
+                    emptyCart.remove();
+                }
+
+                // Add a placeholder item to the cart dropdown (for demonstration)
+                const cartItemsContainer = document.querySelector('.cart-items');
+                const newCartItem = document.createElement('div');
+                newCartItem.classList.add('cart-item');
+                newCartItem.innerHTML = `
+                    <img src="/api/placeholder/60/60" alt="Product" class="cart-item-img">
+                    <div class="cart-item-details">
+                        <h5 class="cart-item-title">Sample Product</h5>
+                        <p class="cart-item-price">N1000.00</p>
+                        <div class="cart-item-quantity">
+                            <button class="quantity-btn">-</button>
+                            <span class="quantity-value">1</span>
+                            <button class="quantity-btn">+</button>
+                        </div>
+                    </div>
+                    <button class="cart-item-remove"><i class="fas fa-trash-alt"></i></button>
+                `;
+                cartItemsContainer.appendChild(newCartItem);
+
+                // Update total (placeholder)
+                const cartTotalAmount = document.querySelector('.cart-total-amount');
+                cartTotalAmount.textContent = `N${(parseFloat(cartTotalAmount.textContent.replace('N', '')) + 1000).toFixed(2)}`;
+            });
+        });
+    </script>
+</body>
+</html>
