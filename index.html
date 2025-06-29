@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MUMMY IK & SONS PROVISION STORE</title>
+    <!-- Google Fonts -->
+    <!-- Add this in the <head> section of your HTML -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Outfit:wght@100..900&family=Syne:wght@400..800&family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- AOS Animation Library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="css/styles.css">
+    
+</head>
+<body>
+    <!-- Header -->
+    <header id="header">
+        <div class="container header-container">
+            <div class="logo">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM16 15.5C16 16.33 15.33 17 14.5 17H9.5C8.67 17 8 16.33 8 15.5V13H16V15.5ZM16 12H8V10.5C8 9.67 8.67 9 9.5 9H14.5C15.33 9 16 9.67 16 10.5V12ZM15 7H9V5H15V7Z"/>
+                </svg>
+                <h1>MUMMY IK & <span>SONS</span> PROVISION STORE</h1>
+            </div>
+            <nav>
+                <ul id="nav-menu">
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <button class="mobile-menu-btn" id="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </nav>
+            <div class="cart-icon" id="cart-icon">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="cart-count">0</span>
+                
+                <div class="cart-dropdown" id="cart-dropdown">
+                    <div class="cart-dropdown-header">
+                        <h4>Shopping Cart</h4>
+                        <button class="cart-close" id="cart-close">
+                            <i class="fas fa-times"></i>
+                        </button>
+                    </div>
+                    <div class="cart-items">
+                        <!-- Cart items will be dynamically added here -->
+                        <div class="empty-cart">
+                            <i class="fas fa-shopping-basket"></i>
+                            <p>Your cart is empty</p>
+                            <a href="#products" class="btn">Shop Now</a>
+                        </div>
+                    </div>
+                    <div class="cart-total">
+                        <span class="cart-total-title">Total:</span>
+                        <span class="cart-total-amount">₦0.00</span>
+                    </div>
+                    <div class="cart-buttons">
+                        <a href="#" class="cart-btn cart-view-btn" style="text-decoration: none; font-family: inherit;">View Cart</a>
+                        <a href="#" class="cart-btn cart-checkout-btn" style="text-decoration: none; font-family: inherit;">Checkout</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content fade-in">
+            <h2>Quality Provisions For Your Daily Needs</h2>
+            <p>Discover our wide range of grocery items, household essentials, and more at affordable prices.</p>
+            <div class="hero-buttons">
+                <a href="#products" class="btn">Shop Now</a>
+                <a href="#about" class="btn btn-outline">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="about">
+        <div class="container">
+            <div class="section-title slide-up">
+                <h2>Why Choose Us</h2>
+                <p>We strive to provide the best shopping experience with quality products and exceptional service.</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card slide-up">
+                    <div class="feature-icon">
+                        <i class="fas fa-truck"></i>
+                    </div>
+                    <h3>Fast Delivery</h3>
+                    <p>We offer quick delivery services to your doorstep. Order today and get your items delivered tomorrow.</p>
+                </div>
+                <div class="feature-card slide-up">
+                    <div class="feature-icon">
+                        <i class="fas fa-medal"></i>
+                    </div>
+                    <h3>Quality Products</h3>
+                    <p>We source our products from trusted suppliers to ensure you receive only the highest quality items.</p>
+                </div>
+                <div class="feature-card slide-up">
+                    <div class="feature-icon">
+                        <i class="fas fa-tags"></i>
+                    </div>
+                    <h3>Best Prices</h3>
+                    <p>Get the best value for your money with our competitive pricing and regular promotions.</p>
+                </div>
+                <div class="feature-card slide-up">
+                    <div class="feature-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>Customer Support</h3>
+                    <p>Our friendly staff is always ready to assist you with any questions or concerns you may have.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular Products -->
+    <section class="popular-products" id="products">
+        <div class="container">
+            <div class="section-title slide-up">
+                <h2>Popular Products</h2>
+                <p>Explore our best-selling items loved by our customers.</p>
+            </div>
+            <div class="products-grid">
+                <div class="product-card scale-up">
+                    <div class="product-img-container">
+                        <img src="images/royal-aroma-rics.jpeg" alt="Rice" class="product-img">
+                        <span class="product-tag">Popular</span>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Grains</span>
+                        <h3 class="product-title">Premium Rice (5kg)</h3>
+                        <div class="product-price">
+                            <span class="currency">₦</span>3,500
+                        </div>
+                        <p class="product-description">High-quality rice perfect for your daily meals.</p>
+                        <div class="add-to-cart">
+                            <button class="add-to-cart-btn">
+                                <i class="fas fa-shopping-cart"></i> Add to Cart
+                            </button>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <span>(4.5)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card scale-up">
+                    <div class="product-img-container">
+                        <img src="images/ktc-vegetable-oil.jpeg" alt="Vegetable Oil" class="product-img">
+                        <span class="product-tag">Best Seller</span>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Cooking Oil</span>
+                        <h3 class="product-title">Vegetable Oil (5L)</h3>
+                        <div class="product-price">
+                            <span class="currency">₦</span>4,200
+                        </div>
+                        <p class="product-description">Pure vegetable oil for all your cooking needs.</p>
+                        <div class="add-to-cart">
+                            <button class="add-to-cart-btn">
+                                <i class="fas fa-shopping-cart"></i> Add to Cart
+                            </button>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span>(5.0)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card scale-up">
+                    <div class="product-img-container">
+                        <img src="images/honey-beans.jpeg" alt="Beans" class="product-img">
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Legumes</span>
+                        <h3 class="product-title">Honey Beans (2kg)</h3>
+                        <div class="product-price">
+                            <span class="currency">₦</span>2,800
+                        </div>
+                        <p class="product-description">Nutritious beans, perfect for your protein needs.</p>
+                        <div class="add-to-cart">
+                            <button class="add-to-cart-btn">
+                                <i class="fas fa-shopping-cart"></i> Add to Cart
+                            </button>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <span>(4.0)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card scale-up">
+                    <div class="product-img-container">
+                        <img src="images/golden-penny-spaghetti.jpeg" alt="Spaghetti" class="product-img">
+                        <span class="product-tag">On Sale</span>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Pasta</span>
+                        <h3 class="product-title">Spaghetti Pack (500g)</h3>
+                        <div class="product-price">
+                            <span class="currency">₦</span>650
+                        </div>
+                        <p class="product-description">Quick and easy to prepare for a delicious meal.</p>
+                        <div class="add-to-cart">
+                            <button class="add-to-cart-btn">
+                                <i class="fas fa-shopping-cart"></i> Add to Cart
+                            </button>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <span>(4.7)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-title fade-in">
+                <h2>What Our Customers Say</h2>
+                <p>Read testimonials from our satisfied customers.</p>
+            </div>
+            <div class="testimonial-slider" id="testimonial-slider">
+                <div class="testimonial-slide active">
+                    <div class="testimonial-quote">
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                    <div class="testimonial-content">
+                        <p class="testimonial-text">I've been shopping here for years, and I'm always impressed by the quality of products and friendly service. Their delivery is also very prompt!</p>
+                        <h4 class="testimonial-author">Chioma Okafor</h4>
+                        <p class="testimonial-author-title">Regular Customer</p>
+                    </div>
+                </div>
+                <div class="testimonial-slide">
+                    <div class="testimonial-quote">
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                    <div class="testimonial-content">
+                        <p class="testimonial-text">The prices here are unbeatable! I've compared with other stores, and Mummy IK & Sons consistently offers the best value for money.</p>
+                        <h4 class="testimonial-author">Adebayo Johnson</h4>
+                        <p class="testimonial-author-title">Happy Customer</p>
+                    </div>
+                </div>
+                <div class="testimonial-slide">
+                    <div class="testimonial-quote">
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                    <div class="testimonial-content">
+                        <p class="testimonial-text">The store has everything I need for my family. The staff is always helpful and ready to assist with any questions. Highly recommended!</p>
+                        <h4 class="testimonial-author">Folake Adeniyi</h4>
+                        <p class="testimonial-author-title">Loyal Customer</p>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-dots" id="testimonial-dots">
+                <span class="dot active" data-index="0"></span>
+                <span class="dot" data-index="1"></span>
+                <span class="dot" data-index="2"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content slide-up">
+                <h2>Ready to Start Shopping?</h2>
+                <p>Visit our store today or order online for convenient delivery to your doorstep.</p>
+                <a href="#products" class="btn">Shop Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h3>About Us</h3>
+                    <p class="footer-about-text">Mummy IK & Sons Provision Store has been serving the community for over 20 years with quality products and exceptional service.</p>
+                    <div class="social-links" >
+                        <a href="#" style="text-decoration: none;"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" style="text-decoration: none;"><i class="fab fa-twitter"></i></a>
+                        <a href="#" style="text-decoration: none;"><i class="fab fa-instagram"></i></a>
+                        <a href="#" style="text-decoration: none;"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#products">Products</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <div class="contact-info">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>123 Main Street, Surulere, Lagos, Nigeria</p>
+                    </div>
+                    <div class="contact-info">
+                        <i class="fas fa-phone-alt"></i>
+                        <p>+234 801 234 5678</p>
+                    </div>
+                    <div class="contact-info">
+                        <i class="fas fa-envelope"></i>
+                        <p>info@mummyikandsons.com</p>
+                    </div>
+                    <div class="contact-info">
+                        <i class="fas fa-clock"></i>
+                        <p>Mon-Sat: 8:00 AM - 8:00 PM<br>Sunday: 9:00 AM - 5:00 PM</p>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe to our newsletter to get the latest updates on new products and promotions.</p>
+                    <div class="newsletter">
+                        <form class="newsletter-form">
+                            <input type="email" class="newsletter-input" placeholder="Your Email Address" required>
+                            <button type="submit" class="newsletter-btn">
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Mummy IK & Sons Provision Store. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- AOS Animation Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    
+    <!-- Main JavaScript -->
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true
+        });
+
+        // Scroll animations
+        document.addEventListener('DOMContentLoaded', function() {
+            // Observe elements with animation classes
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('active');
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            // Observe all elements with animation classes
+            document.querySelectorAll('.slide-up, .fade-in, .scale-up').forEach(el => {
+                observer.observe(el);
+            });
+
+            // Header scroll effect
+            const header = document.getElementById('header');
+            window.addEventListener('scroll', function() {
+                if (window.scrollY > 50) {
+                    header.classList.add('scrolled');
+                } else {
+                    header.classList.remove('scrolled');
+                }
+            });
+
+            // Mobile menu toggle
+            const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+            const navMenu = document.getElementById('nav-menu');
+            
+            mobileMenuBtn.addEventListener('click', function() {
+                navMenu.classList.toggle('open');
+                mobileMenuBtn.querySelector('i').classList.toggle('fa-bars');
+                mobileMenuBtn.querySelector('i').classList.toggle('fa-times');
+            });
+
+            // Cart dropdown
+            const cartIcon = document.getElementById('cart-icon');
+            const cartDropdown = document.getElementById('cart-dropdown');
+            const cartClose = document.getElementById('cart-close');
+            
+            cartIcon.addEventListener('click', function(e) {
+                e.stopPropagation();
+                cartDropdown.classList.toggle('active');
+            });
+            
+            cartClose.addEventListener('click', function() {
+                cartDropdown.classList.remove('active');
+            });
+            
+            document.addEventListener('click', function(e) {
+                if (!cartDropdown.contains(e.target) && e.target !== cartIcon) {
+                    cartDropdown.classList.remove('active');
+                }
+            });
+
+            // Testimonial slider
+            const testimonialSlides = document.querySelectorAll('.testimonial-slide');
+            const testimonialDots = document.querySelectorAll('.dot');
+            let currentSlide = 0;
+            
+            function showSlide(index) {
+                testimonialSlides.forEach(slide => slide.classList.remove('active'));
+                testimonialDots.forEach(dot => dot.classList.remove('active'));
+                
+                testimonialSlides[index].classList.add('active');
+                testimonialDots[index].classList.add('active');
+                currentSlide = index;
+            }
+            
+            testimonialDots.forEach(dot => {
+                dot.addEventListener('click', function() {
+                    const slideIndex = parseInt(this.getAttribute('data-index'));
+                    showSlide(slideIndex);
+                });
+            });
+            
+            // Auto slide testimonials
+            setInterval(function() {
+                let nextSlide = currentSlide + 1;
+                if (nextSlide >= testimonialSlides.length) {
+                    nextSlide = 0;
+                }
+                showSlide(nextSlide);
+            }, 5000);
+
+            // Shopping cart functionality
+            const addToCartButtons = document.querySelectorAll('.add-to-cart-btn');
+            const cartCount = document.querySelector('.cart-count');
+            let cartItemCount = 0;
+            
+            addToCartButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    cartItemCount++;
+                    cartCount.textContent = cartItemCount;
+                    
+                    // Show animation
+                    cartCount.style.transform = 'scale(1.5)';
+                    setTimeout(() => {
+                        cartCount.style.transform = 'scale(1)';
+                    }, 300);
+                    
+                    // Show success message
+                    const productCard = this.closest('.product-card');
+                    const productTitle = productCard.querySelector('.product-title').textContent;
+                    showNotification(`${productTitle} added to cart!`, 'success');
+                });
+            });
+            
+            // Notification function
+            function showNotification(message, type) {
+                const notification = document.createElement('div');
+                notification.className = `notification ${type}`;
+                notification.innerHTML = `
+                    <div class="notification-content">
+                        <i class="fas ${type === 'success' ? 'fa-check-circle' : 'fa-exclamation-circle'}"></i>
+                        <span>${message}</span>
+                    </div>
+                `;
+                
+                document.body.appendChild(notification);
+                
+                setTimeout(() => {
+                    notification.classList.add('show');
+                }, 100);
+                
+                setTimeout(() => {
+                    notification.classList.remove('show');
+                    setTimeout(() => {
+                        notification.remove();
+                    }, 300);
+                }, 3000);
+            }
+
+            // Smooth scrolling for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        window.scrollTo({
+                            top: target.offsetTop - 80,
+                            behavior: 'smooth'
+                        });
+                        
+                        // Close mobile menu if open
+                        navMenu.classList.remove('open');
+                        if (mobileMenuBtn.querySelector('i').classList.contains('fa-times')) {
+                            mobileMenuBtn.querySelector('i').classList.replace('fa-times', 'fa-bars');
+                        }
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
