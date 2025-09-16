@@ -1353,3 +1353,314 @@ h1, h2, h3 {
             transform: scale(1);
             opacity: 1;
         }
+
+        /* App Loader */
+        .app-loader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to right, var(--primary) 0%, var(--navy) 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 9999;
+            transition: opacity 0.5s ease;
+        }
+
+        .app-loader.fade-out {
+            opacity: 0;
+        }
+
+        .loader-content {
+            text-align: center;
+            color: var(--light);
+        }
+
+        .spinner {
+            width: 50px;
+            height: 50px;
+            border: 4px solid rgba(255, 255, 255, 0.3);
+            border-top: 4px solid var(--secondary);
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 1rem;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        /* Notification Styles */
+        .notification {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            max-width: 400px;
+            padding: 1rem 1.5rem;
+            border-radius: 8px;
+            color: white;
+            font-weight: 500;
+            transform: translateX(100%);
+            transition: all 0.3s ease;
+            z-index: 1000;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .notification.show {
+            transform: translateX(0);
+        }
+
+        .notification.success {
+            background-color: var(--success);
+        }
+
+        .notification.error {
+            background-color: var(--error);
+        }
+
+        .notification.warning {
+            background-color: #f59e0b;
+        }
+
+        .notification.info {
+            background-color: #3b82f6;
+        }
+
+        .notification-content {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .notification-content i {
+            font-size: 1.2rem;
+        }
+
+        /* Product Enhancements */
+        .product-stock {
+            font-size: 0.9rem;
+            color: var(--gray);
+            margin-bottom: 1rem;
+        }
+
+        .original-price {
+            text-decoration: line-through;
+            color: var(--gray);
+            font-size: 0.9rem;
+            margin-right: 0.5rem;
+        }
+
+        .discounted-price {
+            color: var(--accent);
+            font-weight: 700;
+            font-size: 1.1rem;
+        }
+
+        .product-tag.out-of-stock {
+            background-color: var(--error);
+        }
+
+        /* Checkout Modal */
+        .checkout-modal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 1001;
+        }
+
+        .modal-content {
+            background: white;
+            border-radius: 10px;
+            max-width: 500px;
+            width: 90%;
+            max-height: 80vh;
+            overflow-y: auto;
+        }
+
+        .modal-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.5rem;
+            border-bottom: 1px solid #eee;
+        }
+
+        .modal-header h3 {
+            margin: 0;
+            color: var(--primary);
+        }
+
+        .close-modal {
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            color: var(--gray);
+            cursor: pointer;
+            padding: 0.5rem;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+
+        .close-modal:hover {
+            background-color: #f5f5f5;
+            color: var(--error);
+        }
+
+        .modal-body {
+            padding: 1.5rem;
+        }
+
+        .modal-body ul {
+            margin: 1rem 0;
+            padding-left: 1.5rem;
+        }
+
+        .modal-body li {
+            margin-bottom: 0.5rem;
+        }
+
+        .modal-footer {
+            padding: 1rem 1.5rem;
+            border-top: 1px solid #eee;
+            text-align: right;
+        }
+
+        /* Enhanced Cart Dropdown */
+        .cart-item-quantity {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-top: 0.5rem;
+        }
+
+        .quantity-btn {
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            border: 1px solid #ddd;
+            background: white;
+            color: var(--dark);
+            cursor: pointer;
+            font-size: 0.8rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+        }
+
+        .quantity-btn:hover {
+            background-color: var(--secondary);
+            color: white;
+            border-color: var(--secondary);
+        }
+
+        .quantity-value {
+            font-size: 0.9rem;
+            font-weight: 600;
+            min-width: 20px;
+            text-align: center;
+        }
+
+        /* Performance Optimizations */
+        .lazy {
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .lazy.loaded {
+            opacity: 1;
+        }
+
+        /* Network Status Indicator */
+        .network-status {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            z-index: 1000;
+        }
+
+        .network-status.online {
+            background-color: var(--success);
+            color: white;
+        }
+
+        .network-status.offline {
+            background-color: var(--error);
+            color: white;
+        }
+
+        /* Responsive Improvements */
+        @media (max-width: 768px) {
+            .notification {
+                right: 10px;
+                left: 10px;
+                max-width: none;
+            }
+
+            .modal-content {
+                width: 95%;
+                margin: 1rem;
+            }
+
+            .app-loader .loader-content p {
+                font-size: 1rem;
+            }
+        }
+
+        /* Accessibility Improvements */
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border: 0;
+        }
+
+        /* Focus indicators */
+        .btn:focus,
+        .add-to-cart-btn:focus,
+        .cart-btn:focus,
+        .quantity-btn:focus {
+            outline: 2px solid var(--secondary);
+            outline-offset: 2px;
+        }
+
+        /* High contrast mode support */
+        @media (prefers-contrast: high) {
+            .product-card {
+                border: 2px solid var(--dark);
+            }
+            
+            .btn {
+                border: 2px solid currentColor;
+            }
+        }
+
+        /* Reduced motion support */
+        @media (prefers-reduced-motion: reduce) {
+            *,
+            *::before,
+            *::after {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+            }
+        }
